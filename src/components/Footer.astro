@@ -3,13 +3,16 @@ const today = new Date()
 ---
 
 <footer>
-	&copy; {today.getFullYear()} Nicolás Arévalo. All rights reserved.
+	<a href='https://niiico.com'>Más sobre mí aquí</a>
+
 	<p>
-		“El propósito del conocimiento es la acción, no el conocimiento” -Aristóteles 
+		“El propósito del conocimiento es la acción, no el conocimiento”
+		-Aristóteles
 	</p>
-	<p>
-		Todo el contenido es propio, each word.
-	</p>
+	<p>Todo el contenido es propio, each word.</p>
+	<span>
+		&copy; {today.getFullYear()} Nicolás Arévalo. All rights reserved.
+	</span>
 </footer>
 <style>
 	footer {
@@ -17,7 +20,16 @@ const today = new Date()
 		color: rgb(var(--gray));
 		text-align: center;
 	}
-	footer p{
+	footer a{
+		text-underline-offset: 4px;
+
+	}
+	footer a,
+	footer span,
+	footer p {
+		display: block;
+	}
+	footer p {
 		margin: 0;
 	}
 </style>
