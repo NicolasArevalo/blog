@@ -1,47 +1,45 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
 
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
+	--micolor: #5b0fac;
+	--accent: rgb(226, 223, 230);
+	--accent-dark: rgb(115, 98, 156);
+	--accent-dark-hover: 183, 181, 184;
+	--accent-dark-hoverPRUEBA: rgb(183, 181, 186);
+
 	--black: 15, 18, 25;
-	--gray: 96, 115, 159;
-	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
+	--titulo:226, 223, 230;
+	--titulito:202, 192, 211;
+	--gray: 189, 188, 190;
+	--grayPRUEBA: rgb(189, 188, 190);
+	--gray-light: 40, 41, 50;
+	--gray-lighPRUEBA: rgba(45, 46, 55, 0.24);
+	--gray-dark: 226, 226, 226;
+	--gray-darkPRUEBA: rgb(229, 229, 229);
+	--gray-gradient: rgba(var(--gray-light), 100%), #0d0317;
 	--box-shadow:
 		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%), 0 16px 32px
 		rgba(var(--gray), 33%);
 }
-@font-face {
-	font-family: "Atkinson";
-	src: url("/fonts/atkinson-regular.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: "Atkinson";
-	src: url("/fonts/atkinson-bold.woff") format("woff");
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
+html{
+	background: linear-gradient(var(--gray-gradient)) no-repeat;
 }
 body {
-	font-family: "Atkinson", sans-serif;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
 	background: linear-gradient(var(--gray-gradient)) no-repeat;
-	background-size: 100% 600px;
+/* 	background-size: 100% 600px; */
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--gray-dark));
 	font-size: 20px;
 	line-height: 1.7;
+}
+svg{
+	width: 28px;
+	height: 28px;
+	margin: 0.25rem;
 }
 main {
 	width: 720px;
@@ -56,7 +54,7 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
+	color: rgb(var(--titulo));
 	line-height: 1.2;
 }
 h1 {
@@ -79,10 +77,10 @@ b {
 	font-weight: 700;
 }
 a {
-	color: var(--accent);
+	color: var(--titulo);
 }
 a:hover {
-	color: var(--accent);
+	color: var(--titulo);
 }
 p {
 	margin-bottom: 1em;
